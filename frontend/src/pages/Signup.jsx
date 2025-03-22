@@ -39,7 +39,7 @@ export const Signup = () =>{
                 <Button label={"Sign up"} 
                     onClick={async () => {
                         try {
-                            const response = await axios.post(`VITE_BACKEND_API_URL/api/v1/user/signup`, {
+                            const response = await axios.post(`${import.meta.env.VITE_BACKEND_API_URL}/api/v1/user/signup`, {
                                 username,
                                 firstName,
                                 lastName,
