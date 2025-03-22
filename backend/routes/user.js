@@ -5,7 +5,7 @@ const { Account } = require('../db')
 const zod = require('zod')
 const jwt = require('jsonwebtoken')
 const router = express.Router()
-const { authMiddleware } = require('../middleware')
+const { authMiddleware } = require('../auth_middleware')
 
 
 //signup , signin , update and search route 
